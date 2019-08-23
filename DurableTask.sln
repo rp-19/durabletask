@@ -53,6 +53,8 @@ Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "DurableTask.Samples.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "samples\ServiceFabricSamples\net462\Worker\Worker.csproj", "{960D26DE-0301-4DB2-B7E4-73E41BE6A1AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestrations", "samples\ServiceFabricSamples\net462\Orchestrations\Orchestrations.csproj", "{C2D64C6B-C68C-4EFF-A148-652141A06665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,14 @@ Global
 		{960D26DE-0301-4DB2-B7E4-73E41BE6A1AB}.Release|Any CPU.ActiveCfg = Release|x64
 		{960D26DE-0301-4DB2-B7E4-73E41BE6A1AB}.Release|x64.ActiveCfg = Release|x64
 		{960D26DE-0301-4DB2-B7E4-73E41BE6A1AB}.Release|x64.Build.0 = Release|x64
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2D64C6B-C68C-4EFF-A148-652141A06665}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +211,7 @@ Global
 		{3D593FB9-0D9F-478B-989D-0064F7E1B476} = {03F5D28B-B754-4D13-BF4F-DBBF6624D71B}
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 		{960D26DE-0301-4DB2-B7E4-73E41BE6A1AB} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
+		{C2D64C6B-C68C-4EFF-A148-652141A06665} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
