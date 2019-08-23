@@ -51,6 +51,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net462", "net462", "{3D593F
 EndProject
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "DurableTask.Samples.ServiceFabric", "samples\ServiceFabricSamples\net462\DurableTask.Samples.ServiceFabric\DurableTask.Samples.ServiceFabric.sfproj", "{A16D6226-6851-4EF1-8650-CF9313D84ABA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableTask.Samples.ServiceFabric.Worker", "samples\ServiceFabricSamples\net462\DurableTask.Samples.ServiceFabric.Worker\DurableTask.Samples.ServiceFabric.Worker.csproj", "{2074424E-753F-4A67-9684-B62B1F413ECD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableTask.Samples.ServiceFabric.Orchestrations", "samples\ServiceFabricSamples\net462\DurableTask.Samples.ServiceFabric.Orchestrations\DurableTask.Samples.ServiceFabric.Orchestrations.csproj", "{7DC79151-4937-4925-87BC-05BEF9D19286}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,20 @@ Global
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA}.Release|x64.ActiveCfg = Release|x64
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA}.Release|x64.Build.0 = Release|x64
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA}.Release|x64.Deploy.0 = Release|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Debug|x64.ActiveCfg = Debug|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Debug|x64.Build.0 = Debug|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Release|Any CPU.ActiveCfg = Release|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Release|x64.ActiveCfg = Release|x64
+		{2074424E-753F-4A67-9684-B62B1F413ECD}.Release|x64.Build.0 = Release|x64
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Debug|x64.Build.0 = Debug|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|x64.ActiveCfg = Release|Any CPU
+		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -192,9 +210,11 @@ Global
 		{03F5D28B-B754-4D13-BF4F-DBBF6624D71B} = {AF4E71A6-B16E-4488-B22D-2761101A601A}
 		{3D593FB9-0D9F-478B-989D-0064F7E1B476} = {03F5D28B-B754-4D13-BF4F-DBBF6624D71B}
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
+		{2074424E-753F-4A67-9684-B62B1F413ECD} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
+		{7DC79151-4937-4925-87BC-05BEF9D19286} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 		SolutionGuid = {2D63A120-9394-48D9-8CA9-1184364FB854}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 EndGlobal
