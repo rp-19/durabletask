@@ -14,9 +14,13 @@ namespace DurableTask.Samples.ServiceFabric.Worker
 	/// </summary>
 	internal sealed class Worker : StatelessService
 	{
-		public Worker(StatelessServiceContext context)
+		private IServiceProvider serviceProvider;
+
+		public Worker(StatelessServiceContext context, IServiceProvider serviceProvider)
 			: base(context)
-		{ }
+		{
+			this.serviceProvider = serviceProvider;
+		}
 
 		/// <summary>
 		/// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
@@ -24,7 +28,10 @@ namespace DurableTask.Samples.ServiceFabric.Worker
 		/// <returns>A collection of listeners.</returns>
 		protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
 		{
-			return new ServiceInstanceListener[0];
+			yield return new ServiceInstanceListener(
+				(context) => new DTFCommunicationListener(serviceProvider),
+				"DTFCommunicationListener"
+			);
 		}
 
 		/// <summary>

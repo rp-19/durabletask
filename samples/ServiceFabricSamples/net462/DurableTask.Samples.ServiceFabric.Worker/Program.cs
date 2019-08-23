@@ -3,6 +3,8 @@ using System.Diagnostics;
 using System.Fabric;
 using System.Threading;
 using System.Threading.Tasks;
+using DurableTask.Samples.ServiceFabric.Orchestrations;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.ServiceFabric.Services.Runtime;
 
 namespace DurableTask.Samples.ServiceFabric.Worker
@@ -21,8 +23,14 @@ namespace DurableTask.Samples.ServiceFabric.Worker
 				// When Service Fabric creates an instance of this service type,
 				// an instance of the class is created in this host process.
 
+				//Create new Service Collection
+				IServiceCollection serviceCollection = new ServiceCollection();
+				serviceCollection.AddOrchestrationServerModules();
+
+				ServiceProvider serviceProvider = serviceCollection.BuildServiceProvider();
+
 				ServiceRuntime.RegisterServiceAsync("DurableTask.Samples.ServiceFabric.WorkerType",
-					context => new Worker(context)).GetAwaiter().GetResult();
+					context => new Worker(context, serviceProvider)).GetAwaiter().GetResult();
 
 				ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(Worker).Name);
 
