@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableTask.Samples.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableTask.Samples.ServiceFabric.Orchestrations", "samples\ServiceFabricSamples\net462\DurableTask.Samples.ServiceFabric.Orchestrations\DurableTask.Samples.ServiceFabric.Orchestrations.csproj", "{7DC79151-4937-4925-87BC-05BEF9D19286}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DurableTasks.Samples.ServiceFabric.Client", "samples\ServiceFabricSamples\net462\DurableTasks.Samples.ServiceFabric.Client\DurableTasks.Samples.ServiceFabric.Client.csproj", "{C558DB5A-ADF5-4833-A604-586300F11DC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,14 @@ Global
 		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|x64.ActiveCfg = Release|Any CPU
 		{7DC79151-4937-4925-87BC-05BEF9D19286}.Release|x64.Build.0 = Release|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Debug|x64.Build.0 = Debug|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Release|x64.ActiveCfg = Release|Any CPU
+		{C558DB5A-ADF5-4833-A604-586300F11DC7}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,6 +222,7 @@ Global
 		{A16D6226-6851-4EF1-8650-CF9313D84ABA} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 		{2074424E-753F-4A67-9684-B62B1F413ECD} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 		{7DC79151-4937-4925-87BC-05BEF9D19286} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
+		{C558DB5A-ADF5-4833-A604-586300F11DC7} = {3D593FB9-0D9F-478B-989D-0064F7E1B476}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D63A120-9394-48D9-8CA9-1184364FB854}

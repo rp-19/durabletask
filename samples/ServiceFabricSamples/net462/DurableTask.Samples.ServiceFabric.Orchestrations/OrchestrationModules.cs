@@ -16,7 +16,8 @@ namespace DurableTask.Samples.ServiceFabric.Orchestrations
 	{
 		public static IServiceCollection AddOrchestrationClientModules(this IServiceCollection services)
 		{
-			string taskHubName = "";
+			// Set connection strings
+			string taskHubName = "dtfhub";
 			string serviceBusConnectionString = "";
 			string storageConnectionString = "";
 
